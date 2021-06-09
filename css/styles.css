@@ -475,3 +475,41 @@ img {
 .footer .social-media-anchor {
   color: var(--white);
 }
+/* Modal window styles */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background-color: var(--white);
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.is-hidden {
+  visibility: none;
+  opacity: 0;
+  pointer-events: none;
+}
