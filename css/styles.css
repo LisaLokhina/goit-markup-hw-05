@@ -512,6 +512,8 @@ img {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 2000ms ease-in-out, transform 2000ms ease-in-out;
+  opacity: 1;
 }
 .modal-window {
   position: absolute;
@@ -523,10 +525,12 @@ img {
   height: 581px;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 1);
-  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
-  opacity: 1;
 }
 .is-hidden .modal-window {
+  transform: translateX(-50%) translateY(-50%) scale(0.5);
+  opacity: 0;
+}
+.backdrop .is-hidden {
   transform: translateX(-50%) translateY(-50%) scale(0.5);
   opacity: 0;
 }
@@ -545,7 +549,7 @@ img {
   height: 30px;
 }
 .is-hidden {
-  visibility: none;
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
