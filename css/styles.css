@@ -130,8 +130,10 @@ img {
   height: 4px;
   background-color: var(--brand-color);
   display: block;
+  border-radius: 2px;
   transform: translateY(25px);
 }
+
 .page-header {
   border-bottom: 1px solid #ececec;
   padding: 24px 0 25px;
@@ -512,8 +514,8 @@ img {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 2000ms ease-in-out, transform 2000ms ease-in-out;
   opacity: 1;
+  transition: opacity 250ms, visibility 250ms;
 }
 .modal-window {
   position: absolute;
@@ -525,15 +527,13 @@ img {
   height: 581px;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 1);
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
 }
 .is-hidden .modal-window {
   transform: translateX(-50%) translateY(-50%) scale(0.5);
   opacity: 0;
 }
-.backdrop .is-hidden {
-  transform: translateX(-50%) translateY(-50%) scale(0.5);
-  opacity: 0;
-}
+
 .close-btn {
   position: absolute;
   right: 8px;
@@ -552,4 +552,5 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 250ms, visibility 250ms;
 }
