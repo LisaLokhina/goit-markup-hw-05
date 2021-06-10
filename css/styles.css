@@ -241,6 +241,25 @@ img {
 .project-thumbnails {
   display: flex;
 }
+.our-expertise-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.our-expertise-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  color: var(--white);
+  background-color: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
 
 /* Our team styles */
 .our-team {
