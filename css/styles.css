@@ -87,6 +87,7 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -116,6 +117,7 @@ img {
 .anchor {
   color: var(--main-color);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .anchor:hover,
 .anchor:focus,
@@ -191,6 +193,7 @@ img {
 .modal-btn {
   margin-top: 30px;
   padding: 10px 32px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -312,6 +315,8 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-team .icon-list-item:not(:last-child),
 .footer .icon-list-item:not(:last-child) {
