@@ -131,7 +131,7 @@ img {
   background-color: var(--brand-color);
   display: block;
   border-radius: 2px;
-  transform: translateY(25px);
+  transform: translateY(27px);
 }
 
 .page-header {
